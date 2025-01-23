@@ -1,0 +1,85 @@
+/* Общие стили для страницы */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #b8b976;
+}
+
+/* Калькулятор */
+.calculator {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 25%;
+}
+
+/* Дисплей */
+.display {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    text-align: right;
+    font-size: 1.5rem;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    color: #333;
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Расстояние между кнопками */
+}
+
+/* Кнопки */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    background-color: #507fd7;
+    color: #ffffff;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    padding: 15px;
+    cursor: pointer;
+    flex: 1; /* Кнопки растягиваются равномерно */
+    text-align: center;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Состояния кнопок */
+button:hover {
+    background-color: #005fa3;
+}
+
+button:active {
+    background-color: #004380;
+    transform: scale(0.98);
+}
+
+button.equals {
+    flex: 2; /* Удваивает ширину кнопки, чтобы кнопки красиво располагались */
+    background-color: #f04b4b;
+}
+
+button.equals:hover {
+    background-color: #c03232;
+}
+
+button.equals:active {
+    background-color: #a02c2c;
+}

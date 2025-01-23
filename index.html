@@ -3,12 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Калькулятор</title>
     <!-- Подключение стилей -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Основной контент страницы -->
+    <div class="calculator">
+        <!-- Поле для результата; disabled запрещает ввод вручную -->
+        <input type="text" class="display" disabled placeholder="0">
+        <div class="buttons">
+            <!-- Верхний ряд -->
+            <button data-action="clear">C</button>
+            <button data-action="sign">±</button>
+            <button data-action="divide">÷</button>
+            <!-- Числа и действия -->
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button data-action="multiply">×</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button data-action="subtract">−</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button data-action="add">+</button>
+            <!-- Нижний ряд -->
+            <button>0</button>
+            <button>.</button>
+            <button data-action="equals">=</button>
+        </div>
+    </div>
     <!-- Подключение скрипта -->
     <script src="script.js"></script>
 </body>
